@@ -9,8 +9,6 @@ interface Props {
 const Submit: FC<Props> = ({ form }) => {
   const { formState, register } = form;
 
-  console.log("disabled:", !formState.isValid);
-
   return (
     <div id="submit-container">
       <input
