@@ -1,0 +1,12 @@
+#confirmation-fieldset > div + div {
+  margin-top: 0.5rem;
+}
+
+#confirmation-fieldset > div {
+  display: flex;
+  align-items: center;
+}
+
+#confirmation-fieldset > div > * + * {
+  margin-left: 0.75rem;
+}

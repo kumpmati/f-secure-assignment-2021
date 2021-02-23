@@ -1,0 +1,30 @@
+#contact-info > * + * {
+  margin-top: 1.5rem;
+}
+
+#name-fieldset {
+  display: flex;
+}
+
+#name-fieldset > .form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-info .form-field > * + * {
+  margin-top: 0.5rem;
+}
+
+.first-name {
+  flex: 1 1 auto;
+  margin-right: 1rem;
+}
+
+.last-name {
+  flex: 4 1 auto;
+}
+
+#email-fieldset {
+  display: flex;
+  flex-direction: column;
+}
