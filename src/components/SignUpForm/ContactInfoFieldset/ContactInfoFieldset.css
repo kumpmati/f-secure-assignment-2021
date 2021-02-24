@@ -1,6 +1,7 @@
 #name-fieldset {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+  gap: 1rem;
 }
 
 #name-fieldset > .form-field {
@@ -14,7 +15,6 @@
 
 .first-name {
   flex: 1 1 auto;
-  margin-right: 1rem;
 }
 
 .last-name {
