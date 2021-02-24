@@ -1,4 +1,10 @@
 #submit-container {
-  display: flex;
-  justify-content: flex-end;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  line-height: 0.5rem;
+}
+
+#required-fields-text {
+  color: gray;
+  font-size: 0.75rem;
 }

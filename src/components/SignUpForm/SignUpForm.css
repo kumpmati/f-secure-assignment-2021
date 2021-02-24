@@ -29,12 +29,22 @@
   border: none;
 }
 
+#sign-up-form > fieldset > legend {
+  font-weight: bold;
+  color: #424242;
+}
+
 #sign-up-form > fieldset label {
   color: #666666;
 }
 
+#sign-up-form-title {
+  margin-bottom: 1rem;
+}
+
 @media all and (max-width: 450px) {
   #sign-up-form {
+    top: 0;
     margin: 0;
     padding: 2.5rem 1rem;
   }

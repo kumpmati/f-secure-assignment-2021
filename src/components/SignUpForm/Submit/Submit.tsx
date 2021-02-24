@@ -11,6 +11,8 @@ const Submit: FC<Props> = ({ form }) => {
 
   return (
     <div id="submit-container">
+      <p id="required-fields-text">* Required field</p>
+
       <input
         className="button"
         type="submit"

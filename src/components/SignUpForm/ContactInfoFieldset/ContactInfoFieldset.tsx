@@ -51,7 +51,6 @@ const ContactInfoFieldset: FC<Props> = ({ form }) => {
           name="email"
           placeholder="hello@example.com"
           aria-invalid={errors.email ? "true" : "false"}
-          onInvalid={console.log}
         />
       </div>
     </fieldset>

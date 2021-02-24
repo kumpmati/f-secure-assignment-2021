@@ -2,13 +2,19 @@ import { FC } from "react";
 import { useForm } from "react-hook-form";
 
 import ContactInfoFieldset from "./ContactInfoFieldset/ContactInfoFieldset";
-import TopicFieldset from "./TopicFieldset/TopicFieldset";
+import TopicFieldset, { Topic } from "./TopicFieldset/TopicFieldset";
 import ConfirmationFieldset from "./ConfirmationFieldset/ConfirmationFieldset";
 
 import "./SignUpForm.css";
 import Submit from "./Submit/Submit";
 
 interface Props {}
+
+const topics: Topic[] = [
+  { text: "Sales and offers", value: "salesAndOffers" },
+  { text: "News", value: "news" },
+  { text: "Podcasts", value: "podcasts" },
+];
 
 const SignUpForm: FC<Props> = () => {
   const form = useForm({ mode: "onChange" });
@@ -18,12 +24,12 @@ const SignUpForm: FC<Props> = () => {
 
   return (
     <form id="sign-up-form" onSubmit={handleSubmit(submit)}>
-      <div>
+      <div id="sign-up-form-title">
         <h1>Subscribe to our newsletter</h1>
-        <p>Get all the deals when they first appear.</p>
+        <p>Keep up to date with what's going on at F-Secure</p>
       </div>
       <ContactInfoFieldset form={form} />
-      <TopicFieldset form={form} />
+      <TopicFieldset form={form} topics={topics} />
       <ConfirmationFieldset form={form} />
       <Submit form={form} />
     </form>

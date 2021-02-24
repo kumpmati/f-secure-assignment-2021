@@ -1,7 +1,3 @@
-#contact-info > * + * {
-  margin-top: 1.5rem;
-}
-
 #name-fieldset {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
@@ -26,6 +22,7 @@
 }
 
 #email-fieldset {
+  margin-top: 1.5rem;
   display: flex;
   flex-direction: column;
 }

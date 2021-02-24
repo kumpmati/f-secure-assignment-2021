@@ -53,6 +53,8 @@ p {
 
   border: 0;
   border-radius: 4px;
+
+  transition: box-shadow 100ms;
 }
 
 .button:hover {
@@ -88,6 +90,8 @@ p {
 
   border: 1px solid #8a8a8a;
   border-radius: 4px;
+
+  transition: box-shadow 100ms;
 }
 
 .textfield:hover {
@@ -133,6 +137,8 @@ p {
 
   border: 1px solid #8a8a8a;
   border-radius: 4px;
+
+  transition: box-shadow 100ms;
 }
 
 .checkbox:hover {

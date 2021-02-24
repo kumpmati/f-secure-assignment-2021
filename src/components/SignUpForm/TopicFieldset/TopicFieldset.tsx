@@ -4,21 +4,16 @@ import "./TopicFieldset.css";
 
 interface Props {
   form: UseFormMethods<Record<string, any>>;
+  topics: Topic[];
 }
 
-interface Topic {
+export interface Topic {
   text: string;
   value: string;
 }
 
-const TopicFieldset: FC<Props> = ({ form }) => {
+const TopicFieldset: FC<Props> = ({ form, topics }) => {
   const { register } = form;
-
-  const topics: Topic[] = [
-    { text: "Sales and offers", value: "valueA" },
-    { text: "Newsletter", value: "valueB" },
-    { text: "New content", value: "valueC" },
-  ];
 
   return (
     <fieldset id="topic-fieldset">
@@ -31,11 +26,11 @@ const TopicFieldset: FC<Props> = ({ form }) => {
             return (
               <li key={name} className="topic">
                 <input
-                  ref={register}
+                  ref={register({ validate: v => !!v.length })}
                   type="checkbox"
                   className="checkbox"
                   id={name}
-                  name={name}
+                  name="topics"
                   value={topic.value}
                 />
                 <label htmlFor={name}>{topic.text}</label>
