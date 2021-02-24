@@ -26,7 +26,10 @@ const TopicFieldset: FC<Props> = ({ form, topics }) => {
             return (
               <li key={name} className="topic">
                 <input
-                  ref={register({ validate: v => !!v.length })}
+                  ref={register({
+                    validate: v =>
+                      !!v.length || "Please select at least one topic",
+                  })}
                   type="checkbox"
                   className="checkbox"
                   id={name}

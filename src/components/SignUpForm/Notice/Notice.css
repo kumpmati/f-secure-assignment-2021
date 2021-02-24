@@ -1,0 +1,87 @@
+@keyframes notice-in {
+  from {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.notice {
+  display: block;
+  font-size: 0.875rem;
+
+  position: fixed;
+  bottom: 2rem;
+
+  padding: 1rem 1.875rem;
+  padding-right: 2.5rem;
+
+  min-width: 20rem;
+  min-height: var(--height-l);
+
+  color: #212121;
+  background-color: #ccc;
+
+  border-radius: 4px;
+  border: 1px solid transparent;
+  border-left-width: 4px;
+
+  box-shadow: 0 0 6px #21212140;
+
+  animation: notice-in 500ms both;
+}
+
+.notice > p {
+  max-width: 20rem;
+  word-wrap: break-word;
+  padding: 0;
+  margin: 0;
+}
+
+.notice .close-button {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.25rem;
+
+  width: 1.5rem;
+  height: 1.5rem;
+
+  outline: 0;
+
+  border-radius: 100%;
+  border: none;
+
+  font-weight: bold;
+
+  color: #808080;
+  background-color: transparent;
+
+  transition: box-shadow 100ms;
+}
+
+.notice .close-button:hover {
+  cursor: pointer;
+  color: #707070;
+}
+
+.notice .close-button:focus {
+  box-shadow: 0 0 0 2px rgba(47, 47, 47, 0.3);
+}
+
+.notice.notification {
+  background-color: #f1f8ff;
+  border-color: #2291ff;
+}
+
+.notice.success {
+  background-color: #e9fff0;
+  border-color: #00a538;
+}
+
+.notice.error {
+  background-color: #fff2f2;
+  border-color: #bf0001;
+}

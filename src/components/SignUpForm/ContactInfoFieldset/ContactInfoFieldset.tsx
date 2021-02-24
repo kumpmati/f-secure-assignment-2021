@@ -1,6 +1,8 @@
 import { FC } from "react";
 import { UseFormMethods } from "react-hook-form";
 
+import Error from "../Error/Error";
+
 import "./ContactInfoFieldset.css";
 
 interface Props {
@@ -44,14 +46,22 @@ const ContactInfoFieldset: FC<Props> = ({ form }) => {
       <div id="email-fieldset" className="form-field">
         <label htmlFor="email">Email *</label>
         <input
-          ref={register({ required: true })}
+          ref={register({
+            required: true,
+            pattern: {
+              value: /\S+@\S+/,
+              message: "Your email address is invalid",
+            },
+          })}
           type="email"
           id="email"
-          className="textfield"
+          formNoValidate
+          className={`textfield ${errors.email ? "invalid" : ""}`}
           name="email"
           placeholder="hello@example.com"
           aria-invalid={errors.email ? "true" : "false"}
         />
+        {errors.email ? <Error message={errors.email.message} /> : null}
       </div>
     </fieldset>
   );

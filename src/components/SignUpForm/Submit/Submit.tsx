@@ -20,6 +20,7 @@ const Submit: FC<Props> = ({ form }) => {
         name="subscribe"
         aria-disabled={formState.isValid ? "false" : "true"}
         disabled={!formState.isValid}
+        formNoValidate
       />
     </div>
   );

@@ -1,0 +1,35 @@
+.form-error {
+  display: block;
+  position: absolute;
+  right: -0.5rem;
+  bottom: -1rem;
+
+  min-height: var(--height-s);
+
+  margin: 0;
+  padding: 0.3rem 0.5rem;
+
+  border-radius: 4px;
+
+  color: white;
+  background-color: #bf0001;
+}
+
+.form-error > p {
+  font-size: 0.75rem;
+
+  margin: 0;
+  padding: 0;
+}
+
+.form-error::after {
+  position: absolute;
+  top: -5px;
+  right: 1rem;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid #bf0001;
+}
