@@ -9,6 +9,7 @@
 
   --height-s: 1rem;
   --height-m: 2.125rem;
+  --height-l: 3.125rem;
 
   --btn-col: #fff;
   --btn-bg: #006fdd;
@@ -114,12 +115,12 @@ p {
   border-color: #cecece;
 }
 
-.textfield:invalid {
+.textfield.invalid {
   background-color: #fff;
   border-color: #bf0001;
 }
 
-.textfield:invalid:focus {
+.textfield.invalid:focus {
   box-shadow: 0px 0px 0px 3px #ffaeae;
 }
 
