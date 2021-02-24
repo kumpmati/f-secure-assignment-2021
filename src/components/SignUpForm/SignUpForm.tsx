@@ -35,7 +35,7 @@ const SignUpForm: FC<Props> = () => {
       <form id="sign-up-form" onSubmit={handleSubmit(submit)}>
         <div id="sign-up-form-title">
           <h1>Subscribe to our newsletter</h1>
-          <p>Keep up to date with what's going on at F-Secure</p>
+          <p>Keep up to date with what's going on at Generic Company co.</p>
         </div>
         <ContactInfoFieldset form={form} />
         <TopicFieldset form={form} topics={topics} />
