@@ -21,8 +21,8 @@ const SignUpForm: FC<Props> = () => {
   const form = useForm({ mode: "onChange" });
   const { handleSubmit, formState } = form;
 
-  const [showNotification, setShowNotification] = useState(true);
-  const [notificationText, setNotificationText] = useState("Success");
+  const [showNotification, setShowNotification] = useState(false);
+  const [notificationText, setNotificationText] = useState("");
 
   const submit = (d: any) => {
     setShowNotification(true);
