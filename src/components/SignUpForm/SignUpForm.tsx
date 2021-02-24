@@ -25,6 +25,7 @@ const SignUpForm: FC<Props> = () => {
   const [notificationText, setNotificationText] = useState("");
 
   const submit = (d: any) => {
+    console.log(d);
     setShowNotification(true);
     setNotificationText(`${d.email} is now subscribed to our newsletter.`);
     form.reset();

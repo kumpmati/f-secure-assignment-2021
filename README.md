@@ -17,3 +17,7 @@ In the project root:
 Run `npm install` if you haven't already.
 
 Then run `npm start` to start the development server.
+
+## Info
+
+The form info is not submitted anywhere. It is logged into the browser console though.
