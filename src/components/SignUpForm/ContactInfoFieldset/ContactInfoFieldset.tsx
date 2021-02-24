@@ -3,8 +3,6 @@ import { UseFormMethods } from "react-hook-form";
 
 import "./ContactInfoFieldset.css";
 
-const EMAIL_REGEXP = /S+@S+.S+/;
-
 interface Props {
   form: UseFormMethods<Record<string, any>>;
 }

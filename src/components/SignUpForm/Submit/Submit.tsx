@@ -7,7 +7,7 @@ interface Props {
 }
 
 const Submit: FC<Props> = ({ form }) => {
-  const { formState, register } = form;
+  const { formState } = form;
 
   return (
     <div id="submit-container">

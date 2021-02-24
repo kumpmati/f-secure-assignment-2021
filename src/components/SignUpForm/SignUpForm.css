@@ -36,7 +36,10 @@
 @media all and (max-width: 450px) {
   #sign-up-form {
     margin: 0;
-    background-color: rgb(235, 176, 176);
-    width: 100%;
+    padding: 2.5rem 1rem;
+  }
+
+  #sign-up-form > fieldset {
+    max-width: 100%;
   }
 }
